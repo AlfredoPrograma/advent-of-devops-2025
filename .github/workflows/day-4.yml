@@ -15,7 +15,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
-
       - name: Set up Golang
         uses: actions/setup-go@v5
         with:
