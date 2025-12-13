@@ -41,7 +41,7 @@ docker run -d -p 8000:8000 advent-day1:latest
 curl localhost:8000 # Hello from Advent of DevOps!
 ```
 
-## Benchmarks
+## Screenshots
 ### Image size
 ![Image size](./screenshots/size.png)
 

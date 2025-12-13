@@ -1,0 +1,23 @@
+name: "Day 3: Add GitHub Actions CI"
+on:
+  push:
+    branches:
+      - day3
+  pull_request:
+    branches:
+      - day3
+defaults:
+  run:
+    working-directory: ./day-3
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Set up Golang
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.25
+      - name: Run tests
+        run: go test -v ./...
